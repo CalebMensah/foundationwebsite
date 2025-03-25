@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Foundation - Initiatives</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="initiatives.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Horizon Foundation</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="initiatives.html">Initiatives</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="donate-btn"><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Initiatives</h1>
+            <p>Explore the various programs and projects we're implementing around the world.</p>
+        </div>
+    </section>
+
+    <section class="initiatives-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Initiatives</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="environment">Environment</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="initiatives-grid">
+        <div class="container">
+            <div class="initiative-cards">
+                <!-- Education Initiatives -->
+                <div class="initiative-card education" id="education">
+                    <img src="/images/students.jpeg" alt="School Access Program">
+                    <div class="initiative-content">
+                        <h3>School Access Program</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> Koforidua</p>
+                        <p>Building and renovating schools in remote areas to provide quality education to children who previously had limited or no access to educational facilities.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>50+</span>
+                                <p>Schools Built</p>
+                            </div>
+                            <div class="stat">
+                                <span>20,000+</span>
+                                <p>Students Reached</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">Read Success Stories</a>
+                    </div>
+                </div>
+                
+                <div class="initiative-card education">
+                    <img src="/images/teachers.png" alt="Teacher Training Initiative">
+                    <div class="initiative-content">
+                        <h3>Teacher Training Initiative</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> Kumasi</p>
+                        <p>Professional development for teachers in underserved communities, equipping them with modern teaching methodologies and resources to improve educational outcomes.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>2,500+</span>
+                                <p>Teachers Trained</p>
+                            </div>
+                            <div class="stat">
+                                <span>150+</span>
+                                <p>Schools Supported</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="initiative-card education">
+                    <img src="/images/digital.jpeg" alt="Digital Learning Program">
+                    <div class="initiative-content">
+                        <h3>Digital Learning Program</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> Nationwide</p>
+                        <p>Providing technology resources and digital literacy training to bridge the digital divide and prepare students for the jobs of the future.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>100+</span>
+                                <p>Computer Labs</p>
+                            </div>
+                            <div class="stat">
+                                <span>15,000+</span>
+                                <p>Students Online</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">View Case Studies</a>
+                    </div>
+                </div>
+                
+                <!-- Healthcare Initiatives -->
+                <div class="initiative-card healthcare" id="healthcare">
+                    <img src="/images/health.jpeg" alt="Mobile Health Clinics">
+                    <div class="initiative-content">
+                        <h3>Mobile Health Clinics</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> West Africa</p>
+                        <p>Bringing healthcare services to remote communities through mobile clinics that provide check-ups, vaccinations, and basic medical care.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>25+</span>
+                                <p>Mobile Units</p>
+                            </div>
+                            <div class="stat">
+                                <span>150,000+</span>
+                                <p>Patients Treated</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">See Impact</a>
+                    </div>
+                </div>
+                
+                <div class="initiative-card healthcare">
+                    <img src="/images/mental.jpeg" alt="Maternal Health Project">
+                    <div class="initiative-content">
+                        <h3>Maternal Health Project</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> Greater Accra</p>
+                        <p>Training midwives and healthcare workers to improve maternal health outcomes and reduce infant mortality in rural areas.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>500+</span>
+                                <p>Midwives Trained</p>
+                            </div>
+                            <div class="stat">
+                                <span>40%</span>
+                                <p>Reduction in Complications</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">Read Research</a>
+                    </div>
+                </div>
+                
+                <div class="initiative-card healthcare">
+                    <img src="/images/water.jpeg" alt="Clean Water Initiative">
+                    <div class="initiative-content">
+                        <h3>Clean Water Initiative</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> Multiple Regions</p>
+                        <p>Implementing water purification systems and wells to provide clean drinking water, reducing waterborne diseases and improving health outcomes.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>200+</span>
+                                <p>Water Systems</p>
+                            </div>
+                            <div class="stat">
+                                <span>300,000+</span>
+                                <p>People with Access</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">Explore Projects</a>
+                    </div>
+                </div>
+                
+                <!-- Environment Initiatives -->
+                <div class="initiative-card environment" id="environment">
+                    <img src="/images/plant.jpeg" alt="Reforestation Project">
+                    <div class="initiative-content">
+                        <h3>Reforestation Project</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> Cape Coast</p>
+                        <p>Planting trees and restoring forests to combat deforestation, protect biodiversity, and mitigate climate change impacts.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>1M+</span>
+                                <p>Trees Planted</p>
+                            </div>
+                            <div class="stat">
+                                <span>5,000+</span>
+                                <p>Acres Restored</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">Join the Effort</a>
+                    </div>
+                </div>
+                
+                <div class="initiative-card environment">
+                    <img src="/images/farm.jpeg" alt="Sustainable Agriculture">
+                    <div class="initiative-content">
+                        <h3>Sustainable Agriculture</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> Multiple Regions</p>
+                        <p>Training farmers in sustainable practices that increase crop yields while reducing environmental impact and building resilience to climate change.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>10,000+</span>
+                                <p>Farmers Trained</p>
+                            </div>
+                            <div class="stat">
+                                <span>30%</span>
+                                <p>Increase in Yield</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">View Success Stories</a>
+                    </div>
+                </div>
+                
+                <div class="initiative-card environment">
+                    <img src="/images/renewable.jpeg" alt="Renewable Energy Projects">
+                    <div class="initiative-content">
+                        <h3>Renewable Energy Projects</h3>
+                        <p class="initiative-location"><i class="fas fa-map-marker-alt"></i> Nationwide</p>
+                        <p>Implementing solar, wind, and other renewable energy solutions in underserved communities to provide clean energy access while reducing carbon emissions.</p>
+                        <div class="initiative-stats">
+                            <div class="stat">
+                                <span>75+</span>
+                                <p>Communities Powered</p>
+                            </div>
+                            <div class="stat">
+                                <span>50,000+</span>
+                                <p>Tons of CO2 Avoided</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-secondary">Explore Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="get-involved">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <p>There are many ways you can support our initiatives and make a difference.</p>
+            <div class="involvement-options">
+                <div class="involvement-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Donate</h3>
+                    <p>Your financial support helps us expand our reach and impact.</p>
+                    <a href="donate.html" class="btn-secondary">Donate Now</a>
+                </div>
+                <div class="involvement-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Volunteer</h3>
+                    <p>Share your skills and time to support our initiatives around the world.</p>
+                    <a href="contact.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="involvement-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Partner</h3>
+                    <p>Collaborate with us through corporate partnerships and joint initiatives.</p>
+                    <a href="contact.html" class="btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Horizon Foundation</h3>
+                    <p>Working towards a better and sustainable future for all.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="initiatives.html">Initiatives</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Impact Street, Global City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@horizonfoundation.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Horizon Foundation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const initiativeCards = document.querySelectorAll('.initiative-card');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Initiative Filtering
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            // Get the filter value
+            const filter = button.getAttribute('data-filter');
+            
+            // Show/hide initiative cards based on filter
+            initiativeCards.forEach(card => {
+                if (filter === 'all' || card.classList.contains(filter)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Mobile Menu Toggle
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (event) => {
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickOnToggle = menuToggle.contains(event.target);
+        
+        if (!isClickInsideMenu && !isClickOnToggle) {
+            navMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+        }
+    });
+});
+    </script>
+</body>
+</html>

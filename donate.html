@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Foundation - Donate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Horizon Foundation</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="initiatives.html">Initiatives</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active donate-btn"><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="page-header donate-header">
+        <div class="container">
+            <h1>Support Our Mission</h1>
+            <p>Your donation helps us create lasting change in communities around the world.</p>
+        </div>
+    </section>
+    <section class="donation-impact">
+        <div class="container">
+            <h2 class="section-title">Your Donation Makes a Difference</h2>
+            <div class="impact-cards">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>₵25</h3>
+                    <p>Provides school supplies for 5 children</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-medkit"></i>
+                    </div>
+                    <h3>₵50</h3>
+                    <p>Funds basic healthcare for a family for a month</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>₵100</h3>
+                    <p>Provides clean water access for a small community</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>₵250</h3>
+                    <p>Plants 50 trees in deforested areas</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>₵500</h3>
+                    <p>Trains a teacher in modern education techniques</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>₵1,000</h3>
+                    <p>Installs solar panels for a rural school</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="donation-form-section">
+        <div class="container">
+            <div class="donation-flex">
+                <div class="donation-form-container">
+                    <h2 class="section-title">Make Your Donation</h2>
+                    <form id="donation-form" class="donation-form">
+                        <div class="donation-amount">
+                            <h3>Select Amount</h3>
+                            <div class="amount-options">
+                                <div class="amount-option">
+                                    <input type="radio" id="amount-25" name="amount" value="25">
+                                    <label for="amount-25">₵25</label>
+                                </div>
+                                <div class="amount-option">
+                                    <input type="radio" id="amount-50" name="amount" value="50">
+                                    <label for="amount-50">₵50</label>
+                                </div>
+                                <div class="amount-option">
+                                    <input type="radio" id="amount-100" name="amount" value="100" checked>
+                                    <label for="amount-100">₵100</label>
+                                </div>
+                                <div class="amount-option">
+                                    <input type="radio" id="amount-250" name="amount" value="250">
+                                    <label for="amount-250">₵250</label>
+                                </div>
+                                <div class="amount-option">
+                                    <input type="radio" id="amount-500" name="amount" value="500">
+                                    <label for="amount-500">₵500</label>
+                                </div>
+                                <div class="amount-option">
+                                    <input type="radio" id="amount-1000" name="amount" value="1000">
+                                    <label for="amount-1000">₵1,000</label>
+                                </div>
+                                <div class="amount-option">
+                                    <input type="radio" id="amount-other" name="amount" value="other">
+                                    <label for="amount-other">Other</label>
+                                    <div class="custom-amount">
+                                        <span class="currency-symbol">₵</span>
+                                        <input type="number" id="custom-amount" placeholder="Enter amount" min="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="donation-frequency">
+                            <h3>Donation Frequency</h3>
+                            <div class="frequency-options">
+                                <div class="frequency-option">
+                                    <input type="radio" id="frequency-once" name="frequency" value="once" checked>
+                                    <label for="frequency-once">One-time</label>
+                                </div>
+                                <div class="frequency-option">
+                                    <input type="radio" id="frequency-monthly" name="frequency" value="monthly">
+                                    <label for="frequency-monthly">Monthly</label>
+                                </div>
+                                <div class="frequency-option">
+                                    <input type="radio" id="frequency-yearly" name="frequency" value="yearly">
+                                    <label for="frequency-yearly">Yearly</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="donor-info">
+                            <h3>Your Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name*</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name*</label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                    <label for="newsletter">Subscribe to our newsletter</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="anonymous" name="anonymous">
+                                    <label for="anonymous">Make my donation anonymous</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-details">
+                            <h3>Payment Details</h3>
+                            <div class="payment-methods">
+                                <!-- Credit Card -->
+                                <div class="payment-method active">
+                                    <input type="radio" id="method-card" name="payment-method" value="card" checked>
+                                    <label for="method-card"><i class="fas fa-credit-card"></i> Credit Card</label>
+                                </div>
+                                <!-- Mobile Money -->
+                                <div class="payment-method">
+                                    <input type="radio" id="method-mobile-money" name="payment-method" value="mobile-money">
+                                    <label for="method-mobile-money"><i class="fas fa-mobile-alt"></i> Mobile Money</label>
+                                    <div class="mobile-money-options" style="display: none;">
+                                        <select id="mobile-money-provider" name="mobile-money-provider" required>
+                                            <option value="">Select Provider</option>
+                                            <option value="mtn">MTN Mobile Money</option>
+                                            <option value="airteltigo">AirtelTigo Cash</option>
+                                            <option value="telecel">Telecel Cash</option>
+                                        </select>
+                                        <div class="form-group">
+                                            <label for="mobile-number">Mobile Number*</label>
+                                            <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter mobile number" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Bank Transfer -->
+                                <div class="payment-method">
+                                    <input type="radio" id="method-bank-transfer" name="payment-method" value="bank-transfer">
+                                    <label for="method-bank-transfer"><i class="fas fa-university"></i> Bank Transfer</label>
+                                    <div class="bank-transfer-info" style="display: none;">
+                                        <p>Please make your bank transfer to the following account:</p>
+                                        <ul>
+                                            <li><strong>Account Name:</strong> Horizon Foundation</li>
+                                            <li><strong>Account Number:</strong> 1234567890</li>
+                                            <li><strong>Bank Name:</strong> Global Bank</li>
+                                            <li><strong>Swift Code:</strong> GBANK123</li>
+                                        </ul>
+                                        <p>After completing the transfer, please upload your proof of payment below.</p>
+                                        <div class="form-group">
+                                            <label for="proof-of-payment">Upload Proof of Payment*</label>
+                                            <input type="file" id="proof-of-payment" name="proof-of-payment" accept="image/*,application/pdf" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="card-payment-fields">
+                                <div class="form-group">
+                                    <label for="card-name">Name on Card*</label>
+                                    <input type="text" id="card-name" name="card-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-number">Card Number*</label>
+                                    <div class="card-input-wrapper">
+                                        <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                                        <div class="card-icons">
+                                            <i class="fab fa-cc-visa"></i>
+                                            <i class="fab fa-cc-mastercard"></i>
+                                            <i class="fab fa-cc-amex"></i>
+                                            <i class="fab fa-cc-discover"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="expiry-date">Expiry Date*</label>
+                                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvc">CVC*</label>
+                                        <input type="text" id="cvc" name="cvc" placeholder="XXX" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="billing-address">
+                            <h3>Billing Address</h3>
+                            <div class="form-group">
+                                <label for="address">Street Address*</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City*</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State/Province*</label>
+                                    <input type="text" id="state" name="state" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="zip">ZIP/Postal Code*</label>
+                                    <input type="text" id="zip" name="zip" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country*</label>
+                                    <select id="country" name="country" required>
+                                        <option value="">Select a country</option>
+                                        <option value="US" selected>United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="KE">Kenya</option>
+                                        <option value="ZA">South Africa</option>
+                                        <!-- Add more countries as needed -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tax-info">
+                            <p>All donations are tax-deductible. You will receive a tax receipt by email.</p>
+                        </div>
+                        <div class="secure-notice">
+                            <i class="fas fa-lock"></i> Your information is secure and encrypted
+                        </div>
+                        <div class="terms-privacy">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">I agree to the <a href="terms.html">terms and conditions</a> and <a href="privacy.html">privacy policy</a></label>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-donate">Complete Donation</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="donation-sidebar">
+                    <div class="why-donate">
+                        <h3>Why Donate to Horizon Foundation?</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> 90% of funds go directly to programs</li>
+                            <li><i class="fas fa-check-circle"></i> Transparent reporting and accountability</li>
+                            <li><i class="fas fa-check-circle"></i> Local partnerships in 25+ countries</li>
+                            <li><i class="fas fa-check-circle"></i> Sustainable development focus</li>
+                            <li><i class="fas fa-check-circle"></i> 20 years of proven impact</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The Horizon Foundation has transformed our community with sustainable water solutions. Their work creates lasting change."</p>
+                        <div class="testimonial-author">
+                            <strong>Maria Lopez</strong><br>
+                            Community Leader, Ecuador
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="other-ways">
+        <div class="container">
+            <h2 class="section-title">Other Ways to Give</h2>
+            <div class="ways-grid">
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Giving</h3>
+                    <p>Partner with us to create meaningful social impact while meeting your CSR goals.</p>
+                    <a href="corporate.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Legacy Giving</h3>
+                    <p>Leave a lasting impact by including Horizon Foundation in your estate planning.</p>
+                    <a href="legacy.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Gifts in Kind</h3>
+                    <p>Donate goods, services, or expertise to support our global initiatives.</p>
+                    <a href="gifts.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Fundraise for Us</h3>
+                    <p>Start your own fundraiser or event to support our mission.</p>
+                    <a href="fundraise.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How is my donation used?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>90% of all donations go directly to our programs in the field. The remaining 10% is used for administration, fundraising, and operational costs to ensure we can continue our mission effectively. We publish detailed financial reports annually that show exactly how funds are allocated.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my donation tax-deductible?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Horizon Foundation is a registered 501(c)(3) nonprofit organization. All donations made by US taxpayers are tax-deductible to the full extent allowed by law. You will receive a tax receipt via email immediately after your donation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I make a donation in honor or memory of someone?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! When completing the donation form, you'll have the option to dedicate your gift in honor or memory of someone special. We can also send a notification to that person or their family about your thoughtful gift.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I change or cancel my monthly donation?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can manage your recurring donations at any time by logging into your donor account on our website. Alternatively, you can contact our donor support team at support@horizonfoundation.org or call us at (800) 555-1234.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I donate if I live outside the United States?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we accept donations from around the world. However, tax benefits may vary depending on your country's laws. For specific information about tax benefits in your country, please consult with a local tax advisor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="more-questions">
+                <p>Have more questions? <a href="contact.html">Contact our donor support team</a>.</p>
+            </div>
+        </div>
+    </section>
+    <section class="impact-stories">
+        <div class="container">
+            <h2 class="section-title">Your Impact in Action</h2>
+            <div class="stories-slider">
+                <div class="story-slide">
+                    <div class="story-image">
+                        <img src="/api/placeholder/500/300" alt="Clean water project in Ghana">
+                    </div>
+                    <div class="story-content">
+                        <h3>Clean Water in Ghana</h3>
+                        <p>Thanks to donors like you, we installed 15 new water wells in rural Ghana last year, providing clean water to over 5,000 people.</p>
+                        <a href="stories/ghana-water.html" class="btn btn-outline">Read Full Story</a>
+                    </div>
+                </div>
+                <div class="story-slide">
+                    <div class="story-image">
+                        <img src="/api/placeholder/500/300" alt="Education program in Nepal">
+                    </div>
+                    <div class="story-content">
+                        <h3>Education in Nepal</h3>
+                        <p>Our education initiative in Nepal has helped 1,200 children gain access to quality education and improved learning facilities.</p>
+                        <a href="stories/nepal-education.html" class="btn btn-outline">Read Full Story</a>
+                    </div>
+                </div>
+                <div class="story-slide">
+                    <div class="story-image">
+                        <img src="/api/placeholder/500/300" alt="Reforestation project in Brazil">
+                    </div>
+                    <div class="story-content">
+                        <h3>Reforestation in Brazil</h3>
+                        <p>We've planted over 50,000 trees in the Amazon rainforest, working with local communities to promote sustainable forestry.</p>
+                        <a href="stories/brazil-reforestation.html" class="btn btn-outline">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h2>Horizon Foundation</h2>
+                    </div>
+                    <p>Creating sustainable change through education, healthcare, and environmental initiatives worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="initiatives.html">Initiatives</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="annual-reports.html">Annual Reports</a></li>
+                        <li><a href="financials.html">Financial Statements</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Impact Way<br>Washington, DC 20001</p>
+                        <p><i class="fas fa-phone"></i> (800) 555-1234</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@horizonfoundation.org">info@horizonfoundation.org</a></p>
+                    </address>
+                    <div class="newsletter">
+                        <h4>Subscribe to our newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="certifications">
+                    <img src="/api/placeholder/80/40" alt="Charity Navigator" class="cert-logo">
+                    <img src="/api/placeholder/80/40" alt="GuideStar Platinum" class="cert-logo">
+                    <img src="/api/placeholder/80/40" alt="BBB Accredited" class="cert-logo">
+                </div>
+                <p class="copyright">&copy; 2025 Horizon Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
